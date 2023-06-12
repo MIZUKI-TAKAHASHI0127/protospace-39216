@@ -5,8 +5,8 @@ class CommentsController < ApplicationController
       #redirect_to "/tweets/#{comment.tweet.id}"
       redirect_to prototype_path(@comment.prototype)
     else
-      @prototype = @comment.prototype
-      @comments = @prototype.comments.includes(:user)
+      #@prototype = @comment.prototype
+      #@comments = @prototype.comments.includes(:user)
       render "prototypes/show"
     end
   end
